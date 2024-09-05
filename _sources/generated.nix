@@ -33,6 +33,26 @@
     };
     date = "2024-09-04";
   };
+  motoc = {
+    pname = "motoc";
+    version = "ffc7696a607cb3efa2e3840292986d16d3d08574";
+    src = fetchgit {
+      url = "https://github.com/galister/motoc.git";
+      rev = "ffc7696a607cb3efa2e3840292986d16d3d08574";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-S9nySfexx3XPeGQdNDFZ0oc0uNQGYtAhLmGXcEDfcrI=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./motoc-ffc7696a607cb3efa2e3840292986d16d3d08574/Cargo.lock;
+      outputHashes = {
+        "openxr-0.19.0" = "sha256-kbEYoN4UvUEaZA9LJWEKx1X1r+l91GjTWs1hNXhr7cw=";
+        "libmonado-rs-0.1.0" = "sha256-2iAsf4f+uuFbZioQMU2az9EneekHLLn9mokz3OjL8kA=";
+      };
+    };
+    date = "2024-09-03";
+  };
   opencomposite = {
     pname = "opencomposite";
     version = "b4bef2a6deb3c8526c211c6db169efedeb13a887";

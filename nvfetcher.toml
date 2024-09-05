@@ -20,3 +20,8 @@ cargo_locks = ["Cargo.lock"]
 src.git = "https://github.com/galister/wlx-overlay-s.git"
 fetch.git = "https://github.com/galister/wlx-overlay-s.git"
 cargo_locks = ["Cargo.lock"]
+
+[motoc]
+src.git = "https://github.com/galister/motoc.git"
+fetch.git = "https://github.com/galister/motoc.git"
+cargo_locks = ["Cargo.lock"]

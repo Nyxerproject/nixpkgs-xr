@@ -83,9 +83,6 @@
         inherit (inputs) fenix;
         cargoLock = source.cargoLock."Cargo.lock";
       };
-      extraAttrs = final: _: source: _: {
-        cargoDeps = final.rustPlatform.importCargoLock source.cargoLock."Cargo.lock";
-      };
     };
   };
 in {

@@ -79,10 +79,9 @@
     };
     motoc = {
       drv = ../pkgs/motoc;
-      drvArgs = source: {
-        inherit (inputs) fenix;
-        cargoLock = source.cargoLock."Cargo.lock";
-      };
+      #drvArgs = source: {
+      #  cargoLock = source.cargoLock."Cargo.lock";
+      # };
     };
   };
 in {

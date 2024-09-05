@@ -79,9 +79,9 @@
     };
     motoc = {
       drv = ../pkgs/motoc;
-      #drvArgs = source: {
-      #  cargoLock = source.cargoLock."Cargo.lock";
-      # };
+      drvArgs = source: {
+        cargoLock = source.cargoLock."Cargo.lock";
+       };
     };
   };
 in {
